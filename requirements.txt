@@ -5,30 +5,18 @@ aiosignal==1.3.1
 annotated-types==0.7.0
 anyio==4.6.2.post1
 arabic-reshaper==3.0.0
-archspec @ file:///home/conda/feedstock_root/build_artifacts/archspec_1708969572489/work
 asn1crypto==1.5.1
 attrs==24.2.0
 blinker==1.9.0
-boltons @ file:///home/conda/feedstock_root/build_artifacts/boltons_1711936407380/work
-Brotli @ file:///Users/runner/miniforge3/conda-bld/brotli-split_1725267563793/work
 BytesIO==0.0.2
-certifi @ file:///home/conda/feedstock_root/build_artifacts/certifi_1725278078093/work/certifi
-cffi @ file:///Users/runner/miniforge3/conda-bld/cffi_1725560578465/work
 chardet==5.2.0
-charset-normalizer @ file:///home/conda/feedstock_root/build_artifacts/charset-normalizer_1698833585322/work
 click==8.1.7
 cmake==3.30.5
-colorama @ file:///home/conda/feedstock_root/build_artifacts/colorama_1666700638685/work
-conda @ file:///Users/runner/miniforge3/conda-bld/conda_1722273201586/work
-conda-libmamba-solver @ file:///home/conda/feedstock_root/build_artifacts/conda-libmamba-solver_1721292473987/work/src
-conda-package-handling @ file:///home/conda/feedstock_root/build_artifacts/conda-package-handling_1717678605937/work
-conda_package_streaming @ file:///home/conda/feedstock_root/build_artifacts/conda-package-streaming_1717678526951/work
+cycler==0.12.1
+distlib==0.3.9
 contourpy==1.3.0
 cryptography==45.0.3
 cssselect2==0.8.0
-cycler==0.12.1
-distlib==0.3.9
-distro @ file:///home/conda/feedstock_root/build_artifacts/distro_1704321475663/work
 dlib==19.24.6
 dotenv==0.9.9
 face-recognition==1.3.0
@@ -37,32 +25,24 @@ filelock==3.16.1
 Flask==3.1.1
 flatbuffers==24.3.25
 fonttools==4.54.1
-frozendict @ file:///Users/runner/miniforge3/conda-bld/frozendict_1726948729231/work
 frozenlist==1.5.0
 h11==0.14.0
-h2 @ file:///home/conda/feedstock_root/build_artifacts/h2_1634280454336/work
 hpack==4.0.0
 html5lib==1.1
 httpcore==1.0.6
 httpx==0.27.2
-hyperframe @ file:///home/conda/feedstock_root/build_artifacts/hyperframe_1619110129307/work
-idna @ file:///home/conda/feedstock_root/build_artifacts/idna_1726459485162/work
+idna==3.4
 itsdangerous==2.2.0
 jax==0.4.35
 jaxlib==0.4.35
 Jinja2==3.1.6
 jiter==0.7.0
 joblib==1.5.1
-jsonpatch @ file:///home/conda/feedstock_root/build_artifacts/jsonpatch_1695536281965/work
-jsonpointer @ file:///Users/runner/miniforge3/conda-bld/jsonpointer_1725302931775/work
 kiwisolver==1.4.7
-libmambapy @ file:///Users/runner/miniforge3/conda-bld/mamba-split_1725066179274/work/libmambapy
 lxml==5.4.0
-mamba @ file:///Users/runner/miniforge3/conda-bld/mamba-split_1725066179274/work/mamba
 MarkupSafe==3.0.2
 matplotlib==3.9.2
 mediapipe==0.10.18
-menuinst @ file:///Users/runner/miniforge3/conda-bld/menuinst_1725359012839/work
 ml_dtypes==0.5.0
 multidict==6.1.0
 numpy==1.26.4
@@ -71,15 +51,10 @@ opencv-contrib-python==4.10.0.84
 opencv-python==4.10.0.84
 opt_einsum==3.4.0
 oscrypto==1.3.0
-packaging @ file:///home/conda/feedstock_root/build_artifacts/packaging_1718189413536/work
 pandas==2.2.3
 pillow==11.1.0
-platformdirs @ file:///home/conda/feedstock_root/build_artifacts/platformdirs_1726613481435/work
-pluggy @ file:///home/conda/feedstock_root/build_artifacts/pluggy_1713667077545/work
-propcache==0.2.0
-protobuf==4.25.5
-pycosat @ file:///Users/runner/miniforge3/conda-bld/pycosat_1696355905762/work
-pycparser @ file:///home/conda/feedstock_root/build_artifacts/pycparser_1711811537435/work
+pycosat==0.6.3
+pycparser==2.21
 pydantic==2.9.2
 pydantic_core==2.23.4
 pydyf==0.11.0
@@ -88,7 +63,6 @@ pyhanko-certvalidator==0.27.0
 pyparsing==3.2.0
 pypdf==5.6.0
 pyphen==0.17.2
-PySocks @ file:///home/conda/feedstock_root/build_artifacts/pysocks_1661604839144/work
 python-bidi==0.6.6
 python-dateutil==2.9.0.post0
 python-dotenv==1.1.0
@@ -96,9 +70,6 @@ pytz==2025.2
 PyVirtualDisplay==3.0
 PyYAML==6.0.2
 reportlab==4.4.1
-requests @ file:///home/conda/feedstock_root/build_artifacts/requests_1717057054362/work
-ruamel.yaml @ file:///Users/runner/miniforge3/conda-bld/ruamel.yaml_1707298175978/work
-ruamel.yaml.clib @ file:///Users/runner/miniforge3/conda-bld/ruamel.yaml.clib_1707314647343/work
 scikit-learn==1.6.1
 scipy==1.14.1
 seaborn==0.13.2
@@ -112,13 +83,10 @@ threadpoolctl==3.6.0
 tinycss2==1.4.0
 tinyhtml5==2.0.0
 tk==0.1.0
-tqdm @ file:///home/conda/feedstock_root/build_artifacts/tqdm_1722737464726/work
-truststore @ file:///home/conda/feedstock_root/build_artifacts/truststore_1724770958874/work
 typing_extensions==4.12.2
 tzdata==2025.2
 tzlocal==5.3.1
 uritools==5.0.0
-urllib3 @ file:///home/conda/feedstock_root/build_artifacts/urllib3_1726496430923/work
 virtualenv==20.28.0
 weasyprint==65.1
 webencodings==0.5.1
