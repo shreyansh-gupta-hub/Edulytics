@@ -147,4 +147,4 @@ def download_report():
                      download_name="report.pdf",)
 # --- Run Server ---
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(host ='0.0.0.0',debug=True)
