@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Edulytics – Student Performance Analyzer</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Inter:wght@600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --indigo: #3F51B5;
+            --neon-cyan: #00BCD4;
+            --soft-black: #212121;
+            --cloud-gray: #E0E0E0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'DM Sans', sans-serif;
+            background-color: var(--soft-black);
+            color: var(--cloud-gray);
+            padding: 60px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .card {
+            background-color: #2C2C2C;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 0 20px rgba(0, 188, 212, 0.3);
+            width: 100%;
+            max-width: 500px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 30px rgba(0, 188, 212, 0.5);
+        }
+
+        .title-section {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            font-family: 'Inter', sans-serif;
+            font-size: 2rem;
+            color: var(--neon-cyan);
+            margin-bottom: 5px;
+        }
+
+        .author {
+            font-size: 0.85rem;
+            color: #B0BEC5;
+            font-style: italic;
+            opacity: 0.8;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        input[type="file"] {
+            padding: 12px;
+            background-color: var(--cloud-gray);
+            border: none;
+            border-radius: 10px;
+            color: var(--soft-black);
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        button {
+            padding: 12px 20px;
+            font-size: 1rem;
+            border: none;
+            border-radius: 12px;
+            background: linear-gradient(135deg, var(--indigo), var(--neon-cyan));
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            transition: box-shadow 0.3s ease, transform 0.2s ease;
+        }
+
+        button:hover {
+            box-shadow: 0 0 12px var(--neon-cyan);
+            transform: scale(1.05);
+        }
+
+        .guide {
+            margin-top: 20px;
+            font-size: 0.95rem;
+            color: #B0BEC5;
+            line-height: 1.6;
+        }
+
+        .guide code {
+            background-color: #1e1e1e;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="title-section">
+            <h1>Edulytics</h1>
+            <div class="author">built by shreyansh</div>
+        </div>
+        <form method="POST" enctype="multipart/form-data" action="/upload">
+            <input type="file" name="marksheet" accept=".csv" required>
+            <button type="submit">Upload</button>
+        </form>
+        <div class="guide">
+            <strong>CSV Format Guide:</strong><br>
+            • The <strong>first row</strong> must have headers: <code>RollNo, Name, Subject1, Subject2, ...</code><br>
+            • <strong>First two columns</strong> must be <code>RollNo</code> and <code>Name</code><br>
+            • Subject names can be <em>any valid name</em> (e.g., Maths, Physics, History)<br>
+            • Each row should contain <strong>numeric marks</strong> for a student<br>
+            • Example:<br>
+            <code>1, Advait, 78, 82, 80, 85, 79</code>
+        </div>
+    </div>
+</body>
+</html>
