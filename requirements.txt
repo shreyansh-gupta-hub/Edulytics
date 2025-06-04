@@ -6,3 +6,4 @@ scikit-learn
 numpy
 xhtml2pdf
 python-dotenv
+openpyxl
