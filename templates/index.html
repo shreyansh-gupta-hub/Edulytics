@@ -118,17 +118,26 @@
             <div class="author">built by shreyansh</div>
         </div>
         <form method="POST" enctype="multipart/form-data" action="/upload">
-            <input type="file" name="marksheet" accept=".csv" required>
+            <input type="file" name="marksheet" accept=".csv, .xls, .xlsx, .json" required>
             <button type="submit">Upload</button>
         </form>
         <div class="guide">
-            <strong>CSV Format Guide:</strong><br>
+            <strong>Supported file formats:</strong> <code>.csv</code>, <code>.xls</code>, <code>.xlsx</code>, <code>.json</code><br><br>
+
+            <strong>General format expectations:</strong><br>
             • The <strong>first row</strong> must have headers: <code>RollNo, Name, Subject1, Subject2, ...</code><br>
             • <strong>First two columns</strong> must be <code>RollNo</code> and <code>Name</code><br>
             • Subject names can be <em>any valid name</em> (e.g., Maths, Physics, History)<br>
-            • Each row should contain <strong>numeric marks</strong> for a student<br>
-            • Example:<br>
-            <code>1, Advait, 78, 82, 80, 85, 79</code>
+            • Each row should contain <strong>numeric marks</strong> for a student<br><br>
+
+            <strong>Example (CSV or Excel):</strong><br>
+            <code>1, Advait, 78, 82, 80, 85, 79</code><br><br>
+
+            <strong>Example (JSON):</strong><br>
+            <code>[
+  {"RollNo": 1, "Name": "Shrey", "Maths": 90, "Science": 95, "English": 100},
+  {"RollNo": 2, "Name": "Riya", "Maths": 88, "Science": 79, "English": 91}
+]</code>
         </div>
     </div>
 </body>
