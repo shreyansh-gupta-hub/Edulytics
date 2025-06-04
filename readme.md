@@ -7,7 +7,6 @@
 
 A modern, intelligent web application built with Flask that analyzes student marksheet data, predicts future performance using machine learning, and generates comprehensive reports with beautiful visualizations.
 
-![Edulytics Dashboard](https://via.placeholder.com/800x400/0f172a/06b6d4?text=Edulytics+Dashboard)
 
 ## 🚀 Features
 
