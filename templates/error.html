@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Error – Edulytics</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Inter:wght@600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --indigo: #3F51B5;
+            --neon-cyan: #00BCD4;
+            --soft-black: #212121;
+            --cloud-gray: #E0E0E0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'DM Sans', sans-serif;
+            background-color: var(--soft-black);
+            color: var(--cloud-gray);
+            padding: 60px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .card {
+            background-color: #2C2C2C;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 0 20px rgba(255, 0, 0, 0.3);
+            max-width: 500px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #FF5252;
+            margin-bottom: 20px;
+            font-family: 'Inter', sans-serif;
+        }
+
+        p {
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+        }
+
+        a {
+            display: inline-block;
+            text-decoration: none;
+            padding: 10px 20px;
+            background: linear-gradient(135deg, var(--indigo), var(--neon-cyan));
+            color: white;
+            font-weight: bold;
+            border-radius: 12px;
+            transition: transform 0.2s ease;
+        }
+
+        a:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>Error</h1>
+        <p>{{ message }}</p>
+        <a href="{{ url_for('index') }}">Back to Home</a>
+    </div>
+</body>
+</html>
