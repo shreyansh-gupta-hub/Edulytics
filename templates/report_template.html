@@ -23,6 +23,7 @@
             width: 100%;
             border-collapse: collapse;
             margin-top: 30px;
+            page-break-inside: avoid;
         }
         table, th, td {
             border: 1px solid #ccc;
@@ -36,13 +37,23 @@
             padding: 8px;
             text-align: center;
         }
-        img {
-            display: block;
-            margin: 30px auto;
+
+        .page-break {
+            page-break-before: always;
+        }
+
+        .chart-section {
+            text-align: center;
+            page-break-inside: avoid;
+            margin-top: 0;
+        }
+
+        .chart-section img {
             width: 90%;
             max-width: 700px;
             border: 1px solid #ddd;
             border-radius: 6px;
+            margin-top: 20px;
         }
     </style>
 </head>
@@ -52,7 +63,12 @@
     <h2>Performance Overview</h2>
     {{ table | safe }}
 
-    <h2>Top Scores Chart</h2>
-    <img src="{{ image }}" alt="Top Scores Chart">
+    <!-- Force a new page before the chart -->
+    <div class="page-break"></div>
+
+    <div class="chart-section">
+        <h2>Top Scores Chart</h2>
+        <img src="{{ image }}" alt="Top Scores Chart">
+    </div>
 </body>
 </html>
