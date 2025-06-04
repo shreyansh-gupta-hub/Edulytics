@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Enlight – Student Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Inter:wght@600&display=swap" rel="stylesheet">
     <style>
         :root {
@@ -41,11 +42,14 @@
             width: 100%;
             max-width: 1100px;
             transition: 0.3s ease;
-            overflow-x: auto;
         }
 
         .card:hover {
             box-shadow: 0 0 30px rgba(0, 188, 212, 0.4);
+        }
+
+        .data-wrapper {
+            overflow-x: auto;
         }
 
         .data {
@@ -60,12 +64,16 @@
             padding: 12px 14px;
             text-align: center;
             color: #eee;
-            word-wrap: break-word;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            font-size: 14px;
         }
 
         .data th {
-            background-color: #3F51B5;
+            background-color: var(--indigo);
             color: white;
+            font-weight: bold;
         }
 
         img {
@@ -104,7 +112,10 @@
 
     <!-- Table Display -->
     <div class="card">
-        {{ table|safe }}
+        <div class="data-wrapper">
+            <!-- Make sure to use: df.to_html(classes='data', index=False) in Flask -->
+            {{ table|safe }}
+        </div>
     </div>
 
     <!-- Chart Display -->
